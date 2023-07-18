@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Javascript -->
+    <script src="assets/javascript/main.js" type="module"></script>
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <section id="addtask">
+                <span class="logo">Task Manager</span>
+               <div class="box" id="box">
+                <div class="row justify-space-between align-item-center"><span class="tasktitle">Add Tasks</span><button id="closebtn"><i class="fa fa-xmark fa-2x"></i></button></div>
+                <form action="#">
+                    <input type="text" id="id"  placeholder="Enter ID" required>
+                    <input type="text" id="title" placeholder="Enter Task Title" required>
+                    <textarea name="" id="desc" cols="30" rows="10" placeholder="Enter Task Desc"></textarea>
+                    <button id="submitbtn" type="submit">SAVE</button>
+                    <button id="resetbtn" type="reset">Clear All</button>
+                </form>
+                
+            </div>
+            <div class="box2" id="details">
+                <div class="row justify-space-between align-item-center"><span class="tasktitle">Add Tasks</span><button id="closebtn2"><i class="fa fa-xmark fa-2x"></i></button></div>
+                <ul>
+                    <li>Total Record 10</li>
+                    <li>Marked Record 7</li>
+                    <li>Enable Dark Mode <input type="radio"></li>
+                </ul>
+            </div>
+            </section>
+            <section class="row align-item-center">
+                <div class="line"><hr></div>
+                <button id="addbtn">Add <i class="fa fa-plus"></i></button>
+                <button id="deletebtn">Delete <i class="fa fa-trash"></i></button>
+                <button id="save">Save <i class="fa fa-save"></i></button>
+                <button id="load">Load <i class="fa fa-download"></i></button>
+                <button id="detailinfo"><i class="fa-solid fa-bars"></i></button>
+            </section>
+            <section id="taskitems">
+                <div class="grid gridbox" id="items">
+                    <div class="col ">
+                        <div class="row justify-space-between align-item-center"><span class="tasktitle">101</span> <span class="tasktitle">Buy Apples </span><div class="operations"> <i class="fa-regular fa-pen-to-square icons" id="update"></i><i class="fa-solid fa-trash icons" id="delete"></i></div></div>
+                        <hr>
+                        <p class="taskdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
